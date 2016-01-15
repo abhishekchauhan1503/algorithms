@@ -39,7 +39,7 @@ public class RodCutter {
     private void prepareLengthOfPieces(RodCutterResult result, Map<Integer, RodCutterResult> rodLengthToMaxProfitMap, int lengthOfRod) {
         int firstCut = result.getFirstCutPosition();
         int diff = lengthOfRod - firstCut;
-        List<Integer> pieces = new ArrayList<Integer>();
+        List<Integer> pieces = new ArrayList<>();
         pieces.add(firstCut);
         while (diff > 0) {
             pieces.add(rodLengthToMaxProfitMap.get(diff).getFirstCutPosition());
@@ -61,7 +61,7 @@ public class RodCutter {
     }
 
     private Map<Integer, RodCutterResult> prepareInitialProfitsMap(int lengthOfRod) {
-        Map<Integer, RodCutterResult> firstCutLengthToMaxProfitMap = new HashMap<Integer, RodCutterResult>();
+        Map<Integer, RodCutterResult> firstCutLengthToMaxProfitMap = new HashMap<>();
         for (int i = 0; i <= lengthOfRod; i++) {
             RodCutterResult result = new RodCutterResult();
             result.setTotalProfit(Integer.MIN_VALUE);
