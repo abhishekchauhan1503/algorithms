@@ -1,20 +1,18 @@
 package com.algorithms.dynamicprogramming;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class RodCutterRecursive {
 
-    public int getNumberOfWaysToCutRod(int lengthOfRod, int numberOfPieces) {
-        if (numberOfPieces > lengthOfRod || numberOfPieces <= 0) {
-            return 0;
-        }
-        if (numberOfPieces == lengthOfRod || numberOfPieces == 1) {
+    public double getNumberOfWaysToCutRod(int lengthOfRod) {
+        return getNumberOfWaysToCutRodRecursively(lengthOfRod);
+    }
+
+    private double getNumberOfWaysToCutRodRecursively(Integer lengthOfRod) {
+        if (1 == lengthOfRod) {
             return 1;
         }
-        int numOfWays = 0;
-        for (int i = 1; i <= lengthOfRod; i++) {
-            numOfWays = (numOfWays + (getNumberOfWaysToCutRod(lengthOfRod - i, numberOfPieces - 1)));
+        double numOfWays = 1;
+        for (int i = 1; i < lengthOfRod; i++) {
+            numOfWays = (numOfWays + (getNumberOfWaysToCutRodRecursively(lengthOfRod - i)));
         }
         return numOfWays;
     }
