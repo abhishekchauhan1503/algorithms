@@ -1,17 +1,17 @@
-package com.algorithms.dynamicprogramming;
+package com.algorithms.dynamicprogramming.old;
 
+
+import com.algorithms.dynamicprogramming.old.RodCutterRecursive;
 import junit.framework.Assert;
 import org.junit.Test;
 
-public class RodCutterDynamicProgrammingTest {
-
-    private RodCutterDynamicProgramming cut = new RodCutterDynamicProgramming();
+public class RodCutterRecursiveTest {
+    private RodCutterRecursive cut = new RodCutterRecursive();
 
     @Test
     public void testGetNumberOfWaysToCutRod() {
-        //Dynamic programming approach works fine with large values of n
-        int maxLength = 1000;
-        cut.initializeList(maxLength);
+        //Recursive approach becomes very slow with n>27
+        int maxLength = 25;
         for (int length = 1; length <= maxLength; length++) {
             double numOfWaysToCut = cut.getNumberOfWaysToCutRod(length);
             Assert.assertEquals(Math.pow(2, length - 1), numOfWaysToCut);
