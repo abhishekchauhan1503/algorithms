@@ -29,9 +29,6 @@ public class RodCutterDynamicProgramming {
     }
 
     private double getNumberOfWaysToCutRodRecursively(Integer lengthOfRod) {
-        if (1 == lengthOfRod) {
-            return 1;
-        }
         if (NUM_OF_WAYS_TO_CUT_ROD.get(lengthOfRod) != null) {
             return NUM_OF_WAYS_TO_CUT_ROD.get(lengthOfRod);
         }
