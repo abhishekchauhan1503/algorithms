@@ -3,9 +3,27 @@
 <project name="Algorithms" default="build" basedir=".">
     <property name="build.dir" value="target"></property>
     <import file="maven-build.xml"/>
-    <target name="build-mvn-targets">
+
+    <target name="build-mvn-targets" depends="mvn_windows, mvn_unix">
+    </target>
+
+    <condition property="isWindows">
+        <os family="windows" />
+    </condition>
+
+    <condition property="isUnix">
+        <os family="unix" />
+    </condition>
+    
+    <target name="mvn_windows" if="isWindows">
+        <exec dir="." executable="cmd">
+            <arg line="/c mvn ant:ant" />
+        </exec>
+    </target>
+
+    <target name="mvn_unix" if="isUnix">
         <exec dir="." executable="sh">
-            <arg line="-c 'mvn ant:ant'"/>
+            <arg line="-c 'mvn ant:ant'" />
         </exec>
     </target>
 
