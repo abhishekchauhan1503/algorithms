@@ -1,7 +1,7 @@
 package com.algoriths.dynamicprogramming.old;
 
 
-import junit.framework.Assert;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class RodCutterRecursiveTest {
@@ -13,7 +13,7 @@ public class RodCutterRecursiveTest {
         int maxLength = 25;
         for (int length = 1; length <= maxLength; length++) {
             double numOfWaysToCut = cut.getNumberOfWaysToCutRod(length);
-            Assert.assertEquals(Math.pow(2, length - 1), numOfWaysToCut);
+            Assert.assertEquals(Math.pow(2, length - 1), numOfWaysToCut, 0);
         }
     }
 }
