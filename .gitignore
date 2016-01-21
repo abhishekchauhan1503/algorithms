@@ -2,3 +2,5 @@ target
 Algorithms.iml
 .idea
 Readme.md
+maven-build.properties
+maven-build.xml
