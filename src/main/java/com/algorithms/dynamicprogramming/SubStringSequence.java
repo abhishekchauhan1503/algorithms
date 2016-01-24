@@ -1,6 +1,6 @@
-package com.algoriths.dynamicprogramming;
+package com.algorithms.dynamicprogramming;
 
-import com.algoriths.dynamicprogramming.models.SubStringSequenceResult;
+import com.algorithms.dynamicprogramming.models.SubStringSequenceResult;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package com.algoriths.dynamicprogramming.old;
+package com.algorithms.dynamicprogramming.old;
 
 public class RodCutterRecursive {
 

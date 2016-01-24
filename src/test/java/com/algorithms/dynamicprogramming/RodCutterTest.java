@@ -1,6 +1,6 @@
-package com.algoriths.dynamicprogramming;
+package com.algorithms.dynamicprogramming;
 
-import com.algoriths.dynamicprogramming.models.RodCutterResult;
+import com.algorithms.dynamicprogramming.models.RodCutterResult;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

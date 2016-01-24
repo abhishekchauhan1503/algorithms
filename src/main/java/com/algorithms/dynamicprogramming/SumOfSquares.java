@@ -1,6 +1,6 @@
-package com.algoriths.dynamicprogramming;
+package com.algorithms.dynamicprogramming;
 
-import com.algoriths.dynamicprogramming.models.SumOfSquaresMetadata;
+import com.algorithms.dynamicprogramming.models.SumOfSquaresMetadata;
 
 import java.util.Arrays;
 import java.util.HashMap;

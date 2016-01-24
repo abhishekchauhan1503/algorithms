@@ -1,6 +1,6 @@
-package com.algoriths.dynamicprogramming;
+package com.algorithms.dynamicprogramming;
 
-import com.algoriths.dynamicprogramming.models.SubStringSequenceResult;
+import com.algorithms.dynamicprogramming.models.SubStringSequenceResult;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.algoriths.dynamicprogramming.models;
+package com.algorithms.dynamicprogramming.models;
 
 import java.util.ArrayList;
 import java.util.List;

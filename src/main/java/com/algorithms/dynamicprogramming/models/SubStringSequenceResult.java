@@ -1,4 +1,4 @@
-package com.algoriths.dynamicprogramming.models;
+package com.algorithms.dynamicprogramming.models;
 
 
 public class SubStringSequenceResult {
