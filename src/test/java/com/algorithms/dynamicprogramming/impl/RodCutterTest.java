@@ -1,4 +1,4 @@
-package com.algorithms.dynamicprogramming;
+package com.algorithms.dynamicprogramming.impl;
 
 import com.algorithms.dynamicprogramming.models.RodCutterResult;
 import org.junit.Assert;
@@ -15,7 +15,7 @@ import java.util.Map;
 @RunWith(MockitoJUnitRunner.class)
 public class RodCutterTest {
     @InjectMocks
-    private RodCutter cut;
+    private DefaultRodCutter cut;
 
     @Test
     public void testCutRodUnitLength() {

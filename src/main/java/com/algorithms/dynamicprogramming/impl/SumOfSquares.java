@@ -1,4 +1,4 @@
-package com.algorithms.dynamicprogramming;
+package com.algorithms.dynamicprogramming.impl;
 
 import com.algorithms.dynamicprogramming.models.SumOfSquaresMetadata;
 

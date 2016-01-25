@@ -1,6 +1,7 @@
-package com.algorithms.dynamicprogramming;
+package com.algorithms.dynamicprogramming.impl;
 
 
+import com.algorithms.dynamicprogramming.impl.SumOfSquares;
 import com.algorithms.dynamicprogramming.models.SumOfSquaresMetadata;
 import org.junit.Assert;
 import org.junit.Test;
